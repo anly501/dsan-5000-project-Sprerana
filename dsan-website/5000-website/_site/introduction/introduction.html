@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -98,10 +117,6 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../introduction/introduction.html" rel="" target="" aria-current="page">
- <span class="menu-text">Introduction</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../introduction/introduction.html" rel="" target="">
  <span class="menu-text">Introduction</span></a>
   </li>  
   <li class="nav-item">
@@ -202,7 +217,9 @@ Approach
 </h4><h4 class="anchored">
 <ul>
 <li>
+<p>
 The study uses pupillometry, specifically pupil-size dynamics, as an objective biomarker for ADHD detection.
+</p>
 </li>
 <li>
 The study provides Comprehensive pupillometric feature engineering to extract a wide range of features from pupillometric data. Data visualization pipeline to provide insights into the data. Binary classification algorithms are used for automated detection. Univariate feature selection to identify significant differentiators.
@@ -278,7 +295,8 @@ In 2020, A Machine-Based Prediction Model of ADHD Using CPT Data has been done. 
 what are the “different points of views”/interpretations in the literature
 </h3>
 <p>
-</p><p>CPT data is being used in the dataset to detect the ADHD. where is in the above mentioned academic publication pupillometry data is being used.</p>
+CPT data is being used in the dataset to detect the ADHD. where is in the above mentioned academic publication pupillometry data is being used. Both use Support vector machines to solve it. The academic publication-2 uses four support vector machines to further categorise the detected ADHD into four conditions.
+</p>
 <h3 class="anchored">
 what are you exploring
 </h3>
@@ -288,6 +306,9 @@ I would like to explore the use of various data sources, including neuroimaging 
 <h3 class="anchored">
 what are your goals and hypothesis
 </h3>
+<p>
+The goal is to collect as much relevant and reliable data as possible to efficiently detect ADHD, that exceeds the accuracy of manual diagnosis. The algorithm taken must be able to model all the conditions and age-groups of the ADHD.
+</p>
 <p>
 </p><p>Hypothesis 1 (Main hypothesis)</p>
 ML-based models can significantly improve the accuracy of ADHD diagnosis compared to traditional clinical assessments.
@@ -301,17 +322,12 @@ INTERNAL ACADEMIC CITATIONS
 </h2>
 <ul>
 <li>
-Machine Learning
+According to Christian Nash, fMRI and EEG is very reliable as they produce high-dimension data while being non-invasive.
 </li>
 <li>
-Artificial Intelligence
-</li>
-<li>
-Big data and computing
+According to William Das pupillometrics can be used to effectively differentiate between ADHD Positive and Negative groups by incorporating SVM
 </li>
 </ul>
-<p>you use the author’s name in the text: Garza (2007) noted that although cats appear to be more intelligent than dogs, dogs actually use similar problem-solving strategies.</p>
-<p>you use the author’s name in the text: Garza (2007) noted that although cats appear to be more intelligent than dogs, dogs actually use similar problem-solving strategies.</p>
 <h2 class="anchored">
 10 QUESTIONS TO PLAN ON ANSWERING
 </h2>
@@ -350,12 +366,21 @@ What Is the Real-World Applicability of this algorithm? which age group is suffe
 <h2 class="anchored">
 CITATIONS
 </h2>
-<p><span class="citation" data-cites="9841277">(<a href="#ref-9841277" role="doc-biblioref"><strong>9841277?</strong></a>)</span></p>
-<p>Das, W., Khanna, S. A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis. Sci Rep 11, 16370 (2021). https://doi.org/10.1038/s41598-021-95673-5</p>
+<p>
+<span class="citation" data-cites="9841277">Nash, Nair, and Naqvi (<a href="#ref-9841277" role="doc-biblioref">2022</a>)</span>
+</p>
+<p>
+Das, W., Khanna, S. A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis. Sci Rep 11, 16370 (2021). https://doi.org/10.1038/s41598-021-95673-5
+</p>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-9841277" class="csl-entry" role="listitem">
+Nash, Christian, Rajesh Nair, and Syed Mohsen Naqvi. 2022. <span>“Machine Learning and ADHD Mental Health Detection - a Short Survey.”</span> In <em>2022 25th International Conference on Information Fusion (FUSION)</em>, 1–8. <a href="https://doi.org/10.23919/FUSION49751.2022.9841277">https://doi.org/10.23919/FUSION49751.2022.9841277</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

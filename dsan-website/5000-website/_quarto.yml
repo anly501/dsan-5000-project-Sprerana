@@ -15,8 +15,6 @@ website:
         text: Data
       - href: introduction/introduction.ipynb
         text: Introduction
-      - href: introduction/introduction.ipynb
-        text: Introduction
       - href: data_gathering/data-gathering.ipynb
         text: Data Gathering
       - href: data_cleaning/data-cleaning.ipynb
