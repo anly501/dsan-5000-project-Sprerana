@@ -7,14 +7,47 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: clustering/clustering.qmd
-        text: Clustering
+      - href: about/about.ipynb
+        text: About me
+      - href: code/code.ipynb
+        text: Code
+      - href: data/data.ipynb
+        text: Data
+      - href: introduction/introduction.ipynb
+        text: Introduction
+      - href: introduction/introduction.ipynb
+        text: Introduction
+      - href: data_gathering/data-gathering.ipynb
+        text: Data Gathering
+      - href: data_cleaning/data-cleaning.ipynb
+        text: Data Cleaning
+      - href: data_gathering/data-gathering.ipynb
+        text: Data Gathering
       - href: eda/eda.ipynb
         text: Data Exploration
+      - href: clustering/clustering.qmd
+        text: Clustering
+      - href: dimensionality_reduction/dimensionality.ipynb
+        text: Dimensionality reduction
+      - href: decision_trees/decision_trees.ipynb
+        text: Decision Trees
+      - href: classification/classification.ipynb
+        text: Classification
+      - href: regression/regression.ipynb
+        text: Regression
+      - href: arm/arm.ipynb
+        text: ARM
+      - href: conclusions/conclusions.ipynb
+        text: Conclusions  
 format:
   html:
     theme: cosmo
     toc: true
+
+
+
+
+
 
 
 

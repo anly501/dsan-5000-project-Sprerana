@@ -1,10 +1,129 @@
 [
   {
+    "objectID": "data/data.html",
+    "href": "data/data.html",
+    "title": "Data",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "arm/arm.html",
+    "href": "arm/arm.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "arm/arm.html#quick-look-at-the-data",
+    "href": "arm/arm.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "arm/arm.html#basic-visualization",
+    "href": "arm/arm.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "DSAN-5000: Introduction",
     "section": "",
     "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+  },
+  {
+    "objectID": "code/code.html",
+    "href": "code/code.html",
+    "title": "Code",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "conclusions/conclusions.html",
+    "href": "conclusions/conclusions.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "conclusions/conclusions.html#quick-look-at-the-data",
+    "href": "conclusions/conclusions.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "conclusions/conclusions.html#basic-visualization",
+    "href": "conclusions/conclusions.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "decision_trees/decision_trees.html",
+    "href": "decision_trees/decision_trees.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "decision_trees/decision_trees.html#quick-look-at-the-data",
+    "href": "decision_trees/decision_trees.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "decision_trees/decision_trees.html#basic-visualization",
+    "href": "decision_trees/decision_trees.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "data_gathering/data_gathering.html",
+    "href": "data_gathering/data_gathering.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "data_gathering/data_gathering.html#quick-look-at-the-data",
+    "href": "data_gathering/data_gathering.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "data_gathering/data_gathering.html#basic-visualization",
+    "href": "data_gathering/data_gathering.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "classification/classification.html",
+    "href": "classification/classification.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "classification/classification.html#quick-look-at-the-data",
+    "href": "classification/classification.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "classification/classification.html#basic-visualization",
+    "href": "classification/classification.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
   },
   {
     "objectID": "eda/eda.html",
@@ -28,10 +147,73 @@
     "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
   },
   {
+    "objectID": "introduction/introduction.html",
+    "href": "introduction/introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "a research study that proposes a machine learning-based framework for the automated detection of Attention-Deficit/Hyperactivity Disorder (ADHD) using pupillometry data. Here’s a summary of the key points:\nProblem: The study addresses the need for accurate and efficient ADHD detection, as current clinical examinations rely on qualitative observations and can be prone to misdiagnosis.\nApproach: - Pupillometric Data: The study uses pupillometry, specifically pupil-size dynamics, as an objective biomarker for ADHD detection. - Framework: The proposed framework integrates: - Comprehensive pupillometric feature engineering: Extracting a wide range of features from pupillometric data. - Visualization pipeline: Providing insights into the data. - Binary classification algorithms: For automated detection. - Univariate feature selection: Identifying significant differentiators. - Classifier: A Support Vector Machine (SVM) classifier is employed for binary\nYou MUST include internal academic citations in your project, where relevant.\nYou DO NOT need to write your entire Intro yet but it should be a serious attempt at a well polished draft. You will update and polish this more later, this is just to get you started. Your questions may change later, but get started now.\nDevelop machine learning models to aid in the early detection and diagnosis of ADHD in children or adults based on behavioral data, neuropsychological assessments, or other relevant data sources.\nHypothesis: If we train machine learning models using a diverse dataset that includes behavioral data, neuropsychological assessments, and other relevant features (independent variables), then these models will demonstrate high accuracy in predicting the presence or absence of ADHD in children and adults (dependent variable) because machine learning algorithms can capture patterns and relationships within this multifaceted data, leading to reliable diagnostic predictions.\nThis hypothesis assumes that machine learning models can effectively utilize a comprehensive dataset encompassing behavioral data and neuropsychological assessments to accurately identify individuals with ADHD. The project can aim to test and validate this hypothesis by developing and evaluating the performance of machine learning models on the specified dataset, with “high accuracy” defined by specific performance metrics such as sensitivity, specificity, and area under the ROC curve (AUC).\none academic citation\nThe text you provided describes a machine learning approach for classifying adult ADHD subtypes based on EEG measurements. Here’s a summary of the key points:\nProblem: Classifying adult ADHD subtypes using EEG measurements.\nData Sample: The study includes 117 adults, comprising 67 individuals with ADHD and 50 controls. EEG measurements are collected under four different conditions: two resting conditions (eyes open and eyes closed) and two neuropsychological tasks (visual continuous performance test and emotional continuous performance test).\nMachine Learning Techniques: - Support Vector Machine (SVM) Classifiers: Four different SVM classifiers are trained, one for each data set corresponding to the four conditions.\nEnsemble Approach: - The output of the four SVM classifiers is combined using a logical expression derived from the Karnaugh map, which is a technique for simplifying Boolean algebraic expressions. This ensemble approach is used to combine the results of the individual classifiers.\nResults: - The study concludes that this ensemble approach improves the discrimination between: 1. ADHD and control groups: It enhances the ability to distinguish between individuals with ADHD and those without. 2. ADHD subtypes: It improves the classification of different subtypes within the ADHD group.\nIn summary, this research employs SVM classifiers and an ensemble approach to improve the classification of adult ADHD subtypes based on EEG measurements under different conditions. The results suggest that this approach enhances the discrimination between ADHD and control groups as well as among different ADHD subtypes. It demonstrates the potential of machine learning techniques for assisting in the diagnosis and subtype classification of ADHD in adults based on EEG data.\nThis section should include paragraphs that summarize the topic, why it is important, why the reader should continue, what work has been done in the past by other research groups, what are the “different points of views”/interpretations in the literature, what are you exploring, what questions are you trying to address, what are your goals and hypothesis, etc\nINTERNAL ACADEMIC CITATIONS\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\nyou use the author’s name in the text: Garza (2007) noted that although cats appear to be more intelligent than dogs, dogs actually use similar problem-solving strategies.\nyou use the author’s name in the text: Garza (2007) noted that although cats appear to be more intelligent than dogs, dogs actually use similar problem-solving strategies.\n10 QUESTIONS TO PLAN ON ANSWERING\n\n\nwhat are the\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\nYou MUST create and include at least 10 questions that you plan to answer for your topic.\nCITATIONS\n(9841277?)\nDas, W., Khanna, S. A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis. Sci Rep 11, 16370 (2021). https://doi.org/10.1038/s41598-021-95673-5"
+  },
+  {
     "objectID": "clustering/clustering.html",
     "href": "clustering/clustering.html",
     "title": "Clustering",
     "section": "",
     "text": "Build out your website tab for “clustering”"
+  },
+  {
+    "objectID": "about/about.html",
+    "href": "about/about.html",
+    "title": "About",
+    "section": "",
+    "text": "Introduction\n\n\nI am Sai Prerana Mandalika. I did my undergrad in Computer Science from CBIT in India.\n\nBuild out your website tab for exploratory data analysis\n\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\n\n\n\n2014-15 : Intermediate in Gyanavapi Junior College\n\n\n2015-17 : Undergrad in Computer Science at CBIT\n\n\n2017-2021 : Masters in Data science and Analytics"
+  },
+  {
+    "objectID": "about/about.html#data-exploration",
+    "href": "about/about.html#data-exploration",
+    "title": "About",
+    "section": "",
+    "text": "Introduction\n\n\nI am Sai Prerana Mandalika. I did my undergrad in Computer Science from CBIT in India.\n\nBuild out your website tab for exploratory data analysis\n\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\n\n\n\n2014-15 : Intermediate in Gyanavapi Junior College\n\n\n2015-17 : Undergrad in Computer Science at CBIT\n\n\n2017-2021 : Masters in Data science and Analytics"
+  },
+  {
+    "objectID": "dimensionality_reduction/dimensionality_reduction.html",
+    "href": "dimensionality_reduction/dimensionality_reduction.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "dimensionality_reduction/dimensionality_reduction.html#quick-look-at-the-data",
+    "href": "dimensionality_reduction/dimensionality_reduction.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "dimensionality_reduction/dimensionality_reduction.html#basic-visualization",
+    "href": "dimensionality_reduction/dimensionality_reduction.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "regression/regression.html",
+    "href": "regression/regression.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "regression/regression.html#quick-look-at-the-data",
+    "href": "regression/regression.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+  },
+  {
+    "objectID": "regression/regression.html#basic-visualization",
+    "href": "regression/regression.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
   }
 ]
