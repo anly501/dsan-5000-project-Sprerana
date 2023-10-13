@@ -1,0 +1,29 @@
+---
+title: "Data Cleaning"
+quarto:
+  mermaid:
+      enabled: true
+---
+
+
+</h1>Data cleaning techniques</h1>
+
+- made sure to avoid mixed data types in the columns of the data frame or tibble.
+
+- In python and r , converted few columns to numeric as it has int values
+
+- Identified the missing values and replaced with NaN
+
+- Replaced the empty with the mean , median or mode accordingly
+
+[Link to clean data](https://github.com/anly501/dsan-5000-project-Sprerana/tree/main/data/01-modified-data)
+
+[Data cleaning code](https://github.com/anly501/dsan-5000-project-Sprerana/tree/main/codes/01-data_cleaning)
+
+[Data cleaning code in r](https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/01-data_cleaning/data_cleaning_code.qmd)
+
+[Data cleaning code in Python](https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/01-data_cleaning/data_cleaning_code.ipynb)
+
+
+
+

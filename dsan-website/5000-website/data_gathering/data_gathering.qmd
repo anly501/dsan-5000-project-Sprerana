@@ -1,0 +1,44 @@
+---
+title: "Data Gathering"
+quarto:
+  mermaid:
+      enabled: true
+---
+
+
+Sources of the data 
+
+Phenotypic data are all kinds of clinical information regarding patients disease symptoms, as well as relevant demographic data, such as age, ethnicity and sex.
+
+A consortium of the International Neuroimaging Datasharing Initiative (INDI), the ADHD-200 Sample is a collaboration of 8 international imaging sites that have aggregated and are openly sharing neuroimaging data from 362 children and adolescents diagnosed with ADHD and 585 typically developing controls.
+
+Gathered phenotypic data of patients collected from different universities like Brown, NYU, OHSU, KKI and Peking
+
+Therefore utilising the ADHD-200 dataset from the following website 
+
+[ADHD-200 Link](https://data.world/nicholsn/adhd-200)
+
+
+The sources of this phenotypic data is ADHD 200 data set.
+
+
+<h2>Methods of the data</h2>
+
+Methods used to collect data
+
+- Used API to collect the data in both Python and R.
+
+- In Python, used Python libraries like "requests" to make HTTP requests to the API endpoints. Use data import libraries like pandas to load data from various file formats such as CSV, Excel, JSON, XML, and databases.
+
+- In R, used R library "httr" to pull the Phenotypic data the website. provides a wide range of functions to import data from various file formats such as CSV, Excel, JSON, XML, and databases using Functions like read.csv
+
+KKI_Phenotype Raw data in csv format.
+![KKI_phenotype](KKI_phenotype.png)
+
+KKI_Phenotype cleaned data in csv format.
+![KKI_phenotype_cleaned](KK_clean.jpeg)
+
+[Link to Raw data](https://github.com/anly501/dsan-5000-project-Sprerana/tree/main/data/00-raw-data)
+
+[API code](https://github.com/anly501/dsan-5000-project-Sprerana/tree/main/codes/01-data-gathering)
+

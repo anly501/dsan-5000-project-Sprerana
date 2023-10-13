@@ -7,18 +7,60 @@
     "text": "Code"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DSAN-5000: Introduction",
+    "objectID": "about/about.html",
+    "href": "about/about.html",
+    "title": "About",
     "section": "",
-    "text": "Name : Mandalika Sai Prerana NetId : sm3906"
+    "text": "Introduction\n\nName : Mandalika Sai Prerana\n\n\nNetId : sm3906\n\n\n\nI am Sai Prerana Mandalika. I did my undergrad in Computer Science from CBIT in India. I am excited to be in the Data Science and Analytics program at Georgetown.\n\nBuild out your website tab for exploratory data analysis\n\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\n\n\n\n2014-15 : Intermediate in Gyanavapi Junior College\n\n\n2015-17 : Undergrad in Computer Science at CBIT\n\n\n2017-2021 : Masters in Data science and Analytics"
   },
   {
-    "objectID": "code/code.html",
-    "href": "code/code.html",
-    "title": "Code",
+    "objectID": "about/about.html#data-exploration",
+    "href": "about/about.html#data-exploration",
+    "title": "About",
     "section": "",
-    "text": "Code"
+    "text": "Introduction\n\nName : Mandalika Sai Prerana\n\n\nNetId : sm3906\n\n\n\nI am Sai Prerana Mandalika. I did my undergrad in Computer Science from CBIT in India. I am excited to be in the Data Science and Analytics program at Georgetown.\n\nBuild out your website tab for exploratory data analysis\n\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\n\n\n\n2014-15 : Intermediate in Gyanavapi Junior College\n\n\n2015-17 : Undergrad in Computer Science at CBIT\n\n\n2017-2021 : Masters in Data science and Analytics"
+  },
+  {
+    "objectID": "clustering/clustering.html",
+    "href": "clustering/clustering.html",
+    "title": "Clustering",
+    "section": "",
+    "text": "Build out your website tab for “clustering”"
+  },
+  {
+    "objectID": "introduction/introduction.html",
+    "href": "introduction/introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Summarisation of two academic publications\n\n\nAcademic Publication-1\n\n\nThe research study proposes a machine learning-based framework for the automated detection of Attention-Deficit/Hyperactivity Disorder (ADHD) using pupillometry data.\n\n\nProblem\n\n\nThe study addresses the need for accurate and efficient ADHD detection, as current clinical examinations rely on qualitative observations and can be prone to misdiagnosis.\n\n\nApproach\n\n\n\n\nThe study uses pupillometry, specifically pupil-size dynamics, as an objective biomarker for ADHD detection.\n\n\n\nThe study provides Comprehensive pupillometric feature engineering to extract a wide range of features from pupillometric data. Data visualization pipeline to provide insights into the data. Binary classification algorithms are used for automated detection. Univariate feature selection to identify significant differentiators.\n\n\nA Support Vector Machine (SVM) classifier is employed for binary Binary classification where ADHD is there or not\n\n\n\nAcademic Publication-2\n\n\nThe research study proposes a machine learning-based approacg for the automated detection of Attention-Deficit/Hyperactivity Disorder (ADHD) using EEG signal data.\n\n\nThe study includes 117 adults, comprising 67 individuals with ADHD and 50 controls. EEG measurements are collected under four different conditions: two resting conditions (eyes open and eyes closed) and two neuropsychological tasks (visual continuous performance test and emotional continuous performance test).\n\n\nApproach\n\n\n\n\nThe study uses EEG signal data.\n\n\nFour different SVM classifiers are trained, one for each data set corresponding to the four conditions mentioned above\n\n\nThe output of the four SVM classifiers is combined using a logical expression derived from the Karnaugh map, which is a technique for simplifying Boolean algebraic expressions. This ensemble approach is used to combine the results of the individual classifiers.\n\n\n\n\nResults\n\n\nThe study concludes that this ensemble approach improves the discrimination between\n\n\n\nADHD and control groups: It enhances the ability to distinguish between individuals with ADHD and those without.\n\n\nADHD subtypes: It improves the classification of different subtypes within the ADHD group.\n\n\nThe results suggest that this approach enhances the discrimination between ADHD and control groups as well as among different ADHD subtypes. It demonstrates the potential of machine learning techniques for assisting in the diagnosis and subtype classification of ADHD in adults based on EEG data.\n\n\n\nsummarize the topic\n\n\nDevelop machine learning models to aid in the early detection and diagnosis of ADHD in children or adults based on behavioral data, neuropsychological assessments, or other relevant data sources.\n\n\nwhy it is important\n\n\nEarly detection of ADHD is crucial for effective intervention and treatment. Machine learning-based systems can potentially identify ADHD in its early stages, allowing for timely interventions and support for individuals, especially children, who may benefit from early treatment.\n\n\nwhy the reader should continue\n\n\nwhat work has been done in the past by other research groups\n\n\nIn 2020, A Machine-Based Prediction Model of ADHD Using CPT Data has been done. To address some of the known shortcomings of traditional analysis and interpretation of CPT data, the present study applied a machine learning-based model (ML) using CPT indices for the Prediction of ADHD.Using a retrospective factorial fitting, followed by a bootstrap technique, we trained, cross-validated, and tested learning models on CPT performance data of 458 children aged 6–12 years ,213 children with ADHD and 245 typically developed children.\n\n\nwhat are the “different points of views”/interpretations in the literature\n\n\nCPT data is being used in the dataset to detect the ADHD. where is in the above mentioned academic publication pupillometry data is being used. Both use Support vector machines to solve it. The academic publication-2 uses four support vector machines to further categorise the detected ADHD into four conditions.\n\n\nwhat are you exploring\n\n\nI would like to explore the use of various data sources, including neuroimaging data (e.g., fMRI, EEG), behavioral assessments, genetic data, and clinical notes. read ore than different approaches and data considered to detect ADHD using ML.\n\n\nwhat are your goals and hypothesis\n\n\nThe goal is to collect as much relevant and reliable data as possible to efficiently detect ADHD, that exceeds the accuracy of manual diagnosis. The algorithm taken must be able to model all the conditions and age-groups of the ADHD.\n\n\nHypothesis 1 (Main hypothesis)\nML-based models can significantly improve the accuracy of ADHD diagnosis compared to traditional clinical assessments.\n\n\nHypothesis 2 (Early Detection)\nML models can detect early signs of ADHD in children, allowing for intervention before symptoms become severe.\n\n\nINTERNAL ACADEMIC CITATIONS\n\n\n\nAccording to Christian Nash, fMRI and EEG is very reliable as they produce high-dimension data while being non-invasive.\n\n\nAccording to William Das pupillometrics can be used to effectively differentiate between ADHD Positive and Negative groups by incorporating SVM\n\n\n\n10 QUESTIONS TO PLAN ON ANSWERING\n\n\n\nWhat Preprocessing Steps are necessary during data cleaning stage\n\n\nWhat are the factors affecting the ADHD\n\n\nwhat are the attributes to be considered for the dataset\n\n\nwhich machine learning algorithm is best suitable for this problem\n\n\nwhat are the different machine learning solutions to this problem\n\n\nwhat are the different machine learning solutions to this problem\n\n\nwhat are the best sources to find pupillometry data.\n\n\nwhat are the different types of data that can considered to detect ADHD.\n\n\nWhat Are the ethical and privacy Concerns? to be considered while collecitng sensitive data regarding adhd\n\n\nWhat Is the Real-World Applicability of this algorithm? which age group is suffering the most and would require a data science solution to detect ADHD\n\n\n\nCITATIONS\n\n\nNash, Nair, and Naqvi (2022)\n\n\nDas, W., Khanna, S. A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis. Sci Rep 11, 16370 (2021). https://doi.org/10.1038/s41598-021-95673-5\n\n\n\n\n\nReferences\n\nNash, Christian, Rajesh Nair, and Syed Mohsen Naqvi. 2022. “Machine Learning and ADHD Mental Health Detection - a Short Survey.” In 2022 25th International Conference on Information Fusion (FUSION), 1–8. https://doi.org/10.23919/FUSION49751.2022.9841277."
+  },
+  {
+    "objectID": "images/eda.html",
+    "href": "images/eda.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Build out your website tab for exploratory data analysis"
+  },
+  {
+    "objectID": "images/eda.html#quick-look-at-the-data",
+    "href": "images/eda.html#quick-look-at-the-data",
+    "title": "Data Exploration",
+    "section": "Quick look at the data",
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\nModuleNotFoundError: No module named 'seaborn'"
+  },
+  {
+    "objectID": "images/eda.html#basic-visualization",
+    "href": "images/eda.html#basic-visualization",
+    "title": "Data Exploration",
+    "section": "Basic visualization",
+    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+  },
+  {
+    "objectID": "data_gathering/data_gathering.html",
+    "href": "data_gathering/data_gathering.html",
+    "title": "Data Gathering",
+    "section": "",
+    "text": "Sources of the data\nPhenotypic data are all kinds of clinical information regarding patients disease symptoms, as well as relevant demographic data, such as age, ethnicity and sex.\nA consortium of the International Neuroimaging Datasharing Initiative (INDI), the ADHD-200 Sample is a collaboration of 8 international imaging sites that have aggregated and are openly sharing neuroimaging data from 362 children and adolescents diagnosed with ADHD and 585 typically developing controls.\nGathered phenotypic data of patients collected from different universities like Brown, NYU, OHSU, KKI and Peking\nTherefore utilising the ADHD-200 dataset from the following website\nADHD-200 Link\nThe sources of this phenotypic data is ADHD 200 data set.\n\nMethods of the data\n\nMethods used to collect data\n\nUsed API to collect the data in both Python and R.\nIn Python, used Python libraries like “requests” to make HTTP requests to the API endpoints. Use data import libraries like pandas to load data from various file formats such as CSV, Excel, JSON, XML, and databases.\nIn R, used R library “httr” to pull the Phenotypic data the website. provides a wide range of functions to import data from various file formats such as CSV, Excel, JSON, XML, and databases using Functions like read.csv\n\nKKI_Phenotype Raw data in csv format. \nKKI_Phenotype cleaned data in csv format. \nLink to Raw data\nAPI code"
   },
   {
     "objectID": "eda/eda.html",
@@ -32,7 +74,7 @@
     "href": "eda/eda.html#quick-look-at-the-data",
     "title": "Data Exploration",
     "section": "Quick look at the data",
-    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\nModuleNotFoundError: No module named 'seaborn'"
   },
   {
     "objectID": "eda/eda.html#basic-visualization",
@@ -42,31 +84,24 @@
     "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
   },
   {
-    "objectID": "introduction/introduction.html",
-    "href": "introduction/introduction.html",
-    "title": "Introduction",
+    "objectID": "code/code.html",
+    "href": "code/code.html",
+    "title": "Code",
     "section": "",
-    "text": "Summarisation of two academic publications\n\n\nAcademic Publication-1\n\n\nThe research study proposes a machine learning-based framework for the automated detection of Attention-Deficit/Hyperactivity Disorder (ADHD) using pupillometry data.\n\n\nProblem\n\n\nThe study addresses the need for accurate and efficient ADHD detection, as current clinical examinations rely on qualitative observations and can be prone to misdiagnosis.\n\n\nApproach\n\n\n\n\nThe study uses pupillometry, specifically pupil-size dynamics, as an objective biomarker for ADHD detection.\n\n\n\nThe study provides Comprehensive pupillometric feature engineering to extract a wide range of features from pupillometric data. Data visualization pipeline to provide insights into the data. Binary classification algorithms are used for automated detection. Univariate feature selection to identify significant differentiators.\n\n\nA Support Vector Machine (SVM) classifier is employed for binary Binary classification where ADHD is there or not\n\n\n\nAcademic Publication-2\n\n\nThe research study proposes a machine learning-based approacg for the automated detection of Attention-Deficit/Hyperactivity Disorder (ADHD) using EEG signal data.\n\n\nThe study includes 117 adults, comprising 67 individuals with ADHD and 50 controls. EEG measurements are collected under four different conditions: two resting conditions (eyes open and eyes closed) and two neuropsychological tasks (visual continuous performance test and emotional continuous performance test).\n\n\nApproach\n\n\n\n\nThe study uses EEG signal data.\n\n\nFour different SVM classifiers are trained, one for each data set corresponding to the four conditions mentioned above\n\n\nThe output of the four SVM classifiers is combined using a logical expression derived from the Karnaugh map, which is a technique for simplifying Boolean algebraic expressions. This ensemble approach is used to combine the results of the individual classifiers.\n\n\n\n\nResults\n\n\nThe study concludes that this ensemble approach improves the discrimination between\n\n\n\nADHD and control groups: It enhances the ability to distinguish between individuals with ADHD and those without.\n\n\nADHD subtypes: It improves the classification of different subtypes within the ADHD group.\n\n\nThe results suggest that this approach enhances the discrimination between ADHD and control groups as well as among different ADHD subtypes. It demonstrates the potential of machine learning techniques for assisting in the diagnosis and subtype classification of ADHD in adults based on EEG data.\n\n\n\nsummarize the topic\n\n\nDevelop machine learning models to aid in the early detection and diagnosis of ADHD in children or adults based on behavioral data, neuropsychological assessments, or other relevant data sources.\n\n\nwhy it is important\n\n\nEarly detection of ADHD is crucial for effective intervention and treatment. Machine learning-based systems can potentially identify ADHD in its early stages, allowing for timely interventions and support for individuals, especially children, who may benefit from early treatment.\n\n\nwhy the reader should continue\n\n\nwhat work has been done in the past by other research groups\n\n\nIn 2020, A Machine-Based Prediction Model of ADHD Using CPT Data has been done. To address some of the known shortcomings of traditional analysis and interpretation of CPT data, the present study applied a machine learning-based model (ML) using CPT indices for the Prediction of ADHD.Using a retrospective factorial fitting, followed by a bootstrap technique, we trained, cross-validated, and tested learning models on CPT performance data of 458 children aged 6–12 years ,213 children with ADHD and 245 typically developed children.\n\n\nwhat are the “different points of views”/interpretations in the literature\n\n\nCPT data is being used in the dataset to detect the ADHD. where is in the above mentioned academic publication pupillometry data is being used. Both use Support vector machines to solve it. The academic publication-2 uses four support vector machines to further categorise the detected ADHD into four conditions.\n\n\nwhat are you exploring\n\n\nI would like to explore the use of various data sources, including neuroimaging data (e.g., fMRI, EEG), behavioral assessments, genetic data, and clinical notes. read ore than different approaches and data considered to detect ADHD using ML.\n\n\nwhat are your goals and hypothesis\n\n\nThe goal is to collect as much relevant and reliable data as possible to efficiently detect ADHD, that exceeds the accuracy of manual diagnosis. The algorithm taken must be able to model all the conditions and age-groups of the ADHD.\n\n\nHypothesis 1 (Main hypothesis)\nML-based models can significantly improve the accuracy of ADHD diagnosis compared to traditional clinical assessments.\n\n\nHypothesis 2 (Early Detection)\nML models can detect early signs of ADHD in children, allowing for intervention before symptoms become severe.\n\n\nINTERNAL ACADEMIC CITATIONS\n\n\n\nAccording to Christian Nash, fMRI and EEG is very reliable as they produce high-dimension data while being non-invasive.\n\n\nAccording to William Das pupillometrics can be used to effectively differentiate between ADHD Positive and Negative groups by incorporating SVM\n\n\n\n10 QUESTIONS TO PLAN ON ANSWERING\n\n\n\nWhat Preprocessing Steps are necessary during data cleaning stage\n\n\nWhat are the factors affecting the ADHD\n\n\nwhat are the attributes to be considered for the dataset\n\n\nwhich machine learning algorithm is best suitable for this problem\n\n\nwhat are the different machine learning solutions to this problem\n\n\nwhat are the different machine learning solutions to this problem\n\n\nwhat are the best sources to find pupillometry data.\n\n\nwhat are the different types of data that can considered to detect ADHD.\n\n\nWhat Are the ethical and privacy Concerns? to be considered while collecitng sensitive data regarding adhd\n\n\nWhat Is the Real-World Applicability of this algorithm? which age group is suffering the most and would require a data science solution to detect ADHD\n\n\n\nCITATIONS\n\n\nNash, Nair, and Naqvi (2022)\n\n\nDas, W., Khanna, S. A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis. Sci Rep 11, 16370 (2021). https://doi.org/10.1038/s41598-021-95673-5\n\n\n\n\n\nReferences\n\nNash, Christian, Rajesh Nair, and Syed Mohsen Naqvi. 2022. “Machine Learning and ADHD Mental Health Detection - a Short Survey.” In 2022 25th International Conference on Information Fusion (FUSION), 1–8. https://doi.org/10.23919/FUSION49751.2022.9841277."
+    "text": "Code"
   },
   {
-    "objectID": "clustering/clustering.html",
-    "href": "clustering/clustering.html",
-    "title": "Clustering",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DSAN-5000: Introduction",
     "section": "",
-    "text": "Build out your website tab for “clustering”"
+    "text": "Name : Mandalika Sai Prerana NetId : sm3906"
   },
   {
-    "objectID": "about/about.html",
-    "href": "about/about.html",
-    "title": "About",
+    "objectID": "data_cleaning/data_cleaning.html",
+    "href": "data_cleaning/data_cleaning.html",
+    "title": "Data Cleaning",
     "section": "",
-    "text": "Introduction\n\nName : Mandalika Sai Prerana\n\n\nNetId : sm3906\n\n\n\nI am Sai Prerana Mandalika. I did my undergrad in Computer Science from CBIT in India. I am excited to be in the Data Science and Analytics program at Georgetown.\n\nBuild out your website tab for exploratory data analysis\n\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\n\n\n\n2014-15 : Intermediate in Gyanavapi Junior College\n\n\n2015-17 : Undergrad in Computer Science at CBIT\n\n\n2017-2021 : Masters in Data science and Analytics"
-  },
-  {
-    "objectID": "about/about.html#data-exploration",
-    "href": "about/about.html#data-exploration",
-    "title": "About",
-    "section": "",
-    "text": "Introduction\n\nName : Mandalika Sai Prerana\n\n\nNetId : sm3906\n\n\n\nI am Sai Prerana Mandalika. I did my undergrad in Computer Science from CBIT in India. I am excited to be in the Data Science and Analytics program at Georgetown.\n\nBuild out your website tab for exploratory data analysis\n\n\n\nMachine Learning\n\n\nArtificial Intelligence\n\n\nBig data and computing\n\n\n\n\n\n2014-15 : Intermediate in Gyanavapi Junior College\n\n\n2015-17 : Undergrad in Computer Science at CBIT\n\n\n2017-2021 : Masters in Data science and Analytics"
+    "text": "Data cleaning techniques\n\n\nmade sure to avoid mixed data types in the columns of the data frame or tibble.\nIn python and r , converted few columns to numeric as it has int values\nIdentified the missing values and replaced with NaN\nReplaced the empty with the mean , median or mode accordingly\n\nLink to clean data\nData cleaning code\nData cleaning code in r\nData cleaning code in Python"
   }
 ]
