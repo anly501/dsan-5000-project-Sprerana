@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- <title>Portfolio Details - iPortfolio Bootstrap Template</title> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mandalika Sai Prerana</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>ADHD Detection and diagnosis</span></a></li>
+         
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Clustering</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Portfoio Details</li> -->
+          </ol>
+        </div>
+
+      </div>
+      
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <!-- <div class="portfolio-details-slider swiper"> -->
+              <div class="swiper-wrapper align-items-center">
+
+             
+
+                <div class="swiper-slide">
+
+
+
+
+                  <h1>Kmeans Clustering </h1>
+
+                  <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/Clustering_code.ipynb">Link to clustering code implementation</a>
+
+
+                  <h2>Introduction</h2>
+                  
+                  
+                  <ul>
+                  <li>K-Means is a way of grouping data into a specified number (K) of clusters. It's like organizing similar items into K different baskets based on their features.</li>
+                  <li>First, we randomly pick K points from our data as the starting centers (centroids) of our clusters.</li>
+                  <li>Each data point is then assigned to the nearest centroid, forming clusters.</li>
+                  <li>We recalibrate the centroids by taking the average of all the points in each cluster.</li>
+                  <li>This process of assigning points and recalibrating centroids repeats until the centroids stabilize and don’t change much anymore.</li>
+                  <li>Ideal Usage: K-Means works best when we know how many clusters we should have and when the clusters are roughly spherical.</li>
+                  </ul>
+                  
+                  <h2>Objective</h2>
+                  <ul>
+                  <li>Given the nature of your data, applying clustering algorithms like DBSCAN, K means and Agglomerative to the PCA-transformed ADHD measures could help identify clusters or patterns within the data. These clusters might reveal insights into different subtypes or severity levels of ADHD, based on how the data points group together in the PCA-reduced space</li>
+                  <li>Using the ADHD-200 dataset we would like to understand how many categorie of ADHD patients are there in the dataset.</li>
+                      
+                  <li>The feature dataset is PCA reduced dataset, which has the features Site,  DX ,  Verbal IQ , ADHD Index. </li>
+                  </ul>
+                  
+                  
+                  <h2>Coding Workflow</h2>
+                  <ul>
+                   <li>The code defines a range of cluster numbers to test, from 1 to 10. This is done to evaluate how the clustering performance changes with different numbers of clusters.</li>
+                  <li>For every cluster n from 1 to 10, a KMeans clustering model is initialized and the model is fitted to the data.</li>
+                      
+                  <li>The results DataFrame is updated with the current number of clusters and the corresponding 'Inertia' value</li>
+                      
+                  <li>After completing the clustering for the range of cluster numbers, the code plots these results.
+                  It uses Seaborn's lineplot to plot 'Inertia' against the 'Clusters'.This plot is often referred to as the "Elbow Method". The idea is to find the number of clusters at which the inertia starts decreasing linearly. This point (the 'elbow') is considered a good indication of the optimal number of clusters.</li>
+                      
+                  <li> Finally, the code displays the plot and prints the results DataFrame, showing the number of clusters tested and their corresponding inertia values.</li>
+                  </ul>
+                      
+                  
+                  </ul>
+                  
+                  <h2>Distance Metric</h2>
+                  Also, when relevant, explore different choices of distance metric for the algorithm. Which distance metric seems to works best in which cases and why?
+                  <ul>
+                  <li>The default distance metric used in the k-means clustering algorithm is the Euclidean distance. This metric, also known as L2 norm or L2 distance,measures the straight line distance between two points in Euclidean space. In the context of k-means, the Euclidean distance is used to calculate the distance between data points and cluster centroids.</li>
+                      
+                  <li>The choice of Euclidean distance in k-means is mainly because it is simple, intuitive, and effective in this scenario, especially where clusters tend to be spherical</li>
+                  <li> It also aligns well with the objective function of k-means, which is to minimize the variance (or the sum of squared distances) within each cluster. </li>
+                  </ul>
+                  
+                  
+                  <h2>Hyper-parameter tuning using Elbow Method</h2>
+                  <li>Inertia, sometimes also called within-cluster sum of squares, is a metric that quantifies the total variance within the clusters in a clustering model. It measures the sum of squared distances of samples to their closest cluster center.</li>
+                  
+                  <li>Inertia is particularly important in the elbow method, where the number of clusters 
+                  
+                  K is plotted against the corresponding inertia. The 'elbow' point in this plot, where the inertia 
+                  starts decreasing at a slower rate, is considered as an indicator of the appropriate number of clusters</li>
+                  
+                  <li> Lower values of inertia mean that the points within a cluster are close to each other, suggesting better clusters. However, it is not an absolute measure of the quality of the clustering, as very low inertia can also be a sign of overfitting, where too many clusters are used.</li>
+                  
+                  <li>In the Elbow method plot, at the 3 number of clusters, the intertia stops dropping drastically so we can conclude the optimal number of clusters is 3 </li>
+                  
+                  <img width="600" 
+                  height="400" src="assets/img/kmeans_elbow.png" alt="Italian Trulli">
+                  
+                  
+                  
+                  <h2>Final results</h2>
+                  <li>performed the Kmeans clustering on the optimal number of clusters i.e 3</li>
+                  <li>Cluster Centers are [[-1.73265031  0.58335028], [ 1.57977812  0.44423293]
+                   and [-0.06306071 -0.8887055 ]] </li>
+                   
+                  <li>Counts in each Cluster</li>
+                  
+                  <ul>
+                  <li>
+                          
+                  <ul>
+                  <li>2 : 59</li>
+                  <li>1 : 55</li>
+                  <li>0 : 48</li>
+                  </ul>
+                      
+                  </li>
+                  </ul>
+
+
+                  <img width="600" 
+                    height="400" src="assets/img/kmeans_clusters.png" alt="Italian Trulli">
+
+
+                    <!-- DBSCAN!!!!!!! -->
+
+                    <h2>DBSCAN (Density-Based Spatial Clustering of Applications with Noise)</h2>
+
+<h2>Introduction</h2>
+
+<ul>
+<li>DBSCAN focuses on the density of data points. It groups densely packed points together and identifies points in sparse areas as outliers.</li>
+<li>We set two key parameters: eps (a distance measure) and minPts (minimum number of points to form a dense region).</li>
+<li>If a point has minPts or more points within eps distance, it becomes a core point of a cluster.</li>
+<li>Points close to a core point but not dense enough themselves are part of the cluster but not core points.</li>
+<li>Points that don't meet these criteria are marked as outliers.</li>
+<li>DBSCAN is great for data with clusters of varying shapes and when we are concerned about outliers.</li>
+</ul>
+
+<h2>Coding Workflow</h2>
+
+<li>Used the DBSCAN built-in function from the sklearn.cluster library.</li>
+
+Parameter Tuning and Stability Analysis: Try different combinations of eps and min_samples and analyze their stability. We'll compute silhouette scores for various parameter settings and see how they change with small adjustments in parameters.</li>
+<li>isualization: Plot the results to visually inspect the clusters.</li>
+<li>Analysis: Based on the silhouette scores and visual inspection, draw conclusions about the ideal parameters.</li>
+
+<h2>Distance Metric</h2>
+<ul>
+    
+<li>The default distance metric used in the DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm is typically the Euclidean distance. This metric is used to measure the distance between two points in space, which in the context of DBSCAN, helps to determine the closeness of data points.</li>
+<li>This method is effective in identifying clusters of varying shapes and sizes in a data set.</li>
+</ul>
+
+<h2>Hyper-parameter tuning using Silhouette Method</h2>
+
+
+<ul>
+<li>The eps values at which the Silhouette Score peaks are potential candidates for optimal clustering. These peaks represent eps values where the clusters are most distinct from each other.</li>
+
+<li>Stability of the score: Besides just looking for the highest peak, we should also consider how stable the score is around that peak. If the score remains relatively high over a range of eps values, it indicates that the clustering is robust to slight variations in eps.</li>
+   
+</ul>
+
+<img width="600" 
+height="400" src="assets/img/DBSCAN_parameter_tuning.png" alt="Italian Trulli">
+
+<h2>Final results</h2>
+    
+<ul>
+   
+<li>The optimal number of clusters with highest Silhouette Score, optimal eps and optimal min_samples is 7</li>
+      
+    
+<img width="600" 
+height="400" src="assets/img/DBSCAN_cluster.png" alt="Italian Trulli">
+    
+</ul>
+    
+<!-- Agglomerative!!!!!!!! -->
+<h2>Hierarchical clustering</h2>
+
+<h2>Introduction</h2>
+<ul>
+<li>Hierarchical clustering creates a tree of clusters. It doesn’t require us to specify the number of clusters beforehand, which can be a big advantage.</li>
+<li>Initially, each data point is its own cluster.</li>
+<li>In each step, the two nearest clusters merge into one.</li>
+<li>This merging continues until we have one big cluster or until we decide to stop.</li>
+<li>The measure of 'closeness' between clusters can vary. It might be the distance between the closest points of clusters or the farthest points, among other methods.</li>
+<li>Hierarchical clustering is useful when the relationship between data points is more important than 
+arbitrary clustering, and it’s especially good for visualizing data relationships in a dendrogram (tree-like diagram).</li>
+    
+<h2>Code-workflow</h2>
+   
+<ul>
+<li>StandardScaler from sklearn.preprocessing for scaling the data.</li>
+<li>AgglomerativeClustering from sklearn.cluster for clustering. It is implemented with a specified number of clusters (n_clusters).It fits the model to the scaled data and predicts labels, storing them in labels.</li>
+<li>dendrogram and linkage from scipy.cluster.hierarchy for hierarchical clustering and dendrogram plotting.linkage(X, method='ward') performs hierarchical clustering using the Ward method.</li>
+<li>matplotlib.pyplot (aliased as plt) for plotting graphs.A scatter plot is generated with cluster labels for coloring.</li>
+    
+</ul>
+    
+ <h2>Hyper-parameter tuning</h2>
+
+<ul>
+    
+<li>Used Elbow method to identify the optimal number of clusters. The distances at each level of the hierarchy are analyzed, particularly focusing on the last few merges.A plot is made of these distances, and the "elbow" point is identified where the acceleration of distance change is the highest (using the second derivative).This point suggests the optimal number of clusters.</li>
+    
+<li> different combinations of n_clusters, linkage, and affinity hyperparameters are considered. The combination that gives the highest silhouette score is considered the best set of hyperparameters for your dataset.</li>
+
+</ul>
+   
+<h2>Final results</h2>
+ 
+      
+</ul>
+<li>Extracts the last ten distances from the linkage matrix.</li>
+<li>Calculates the second derivative (acceleration) of these distances.</li>
+<li>The index of the maximum value in this acceleration array plus two gives the optimal number of clusters.</li>
+<li>Based on this, the optimal number of clusters is found to be 3</li>
+    
+</ul>
+<img width="600" height="400" src="assets/img/dendogram.png" alt="Italian Trulli">
+
+<img width="600" height="400" src="assets/img/agglomerative_clusters.png" alt="Italian Trulli">
+
+<!-- Results and Conclusion -->
+
+<h2>Results:</h2>
+
+<b>Compare the results of your various clustering analysis methods.</b>
+
+<ul>
+<li>kmeans gave us 3 optimal number of clusters.</li>
+<li>DBSCAN gave us 6 optimal number of clusters.</li>
+<li>Agglomerative gave us 3 optimal number of clusters.</li>
+     
+</ul>
+
+
+<li>kmeans worked the best and was easiest to use.</li>
+
+<li>Our goal is to find the optimal number of clusters to identify how many categories of ADHD patients are there. The dataset has both healthy controls and ADHD patients. The clustering algorithms provided new insights like there are three catergories of ADHD patients according to the dataset. </li>
+
+<h2>Conclusions:</h2>
+
+<p>These clustering techniques, by uncovering hidden patterns and groupings in data, not only drive advancements in science and technology but also have profound implications for decision-making in business, security, environmental management, and social research. Their ability to make sense of complex data directly affects real people by enabling more personalized services, securing systems against fraud, understanding natural phenomena better, and uncovering the subtleties of human interaction and societal structures.</p>
+
+
+
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            <!-- </div> -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Definition</h3>
+              <p>Clustering is a method used in data analysis and machine learning that involves grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups (clusters). It's a form of unsupervised learning, which means it finds patterns in the data without reference to known, labeled outcomes.</p>
+              
+            </div>
+           
+          </div>
+
+        </div>
+
+      </div>
+      <a href="index.html">
+        <button style = "position:relative; right: 300px;left:800px; top:2px; background-color:rgb(0, 255, 247);">Go Back</button>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+     
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

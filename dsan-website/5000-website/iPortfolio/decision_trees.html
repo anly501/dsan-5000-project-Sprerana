@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mandalika Sai Prerana</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>ADHD Detection and diagnosis</span></a></li>
+         
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Decision Trees</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Portfoio Details</li> -->
+          </ol>
+        </div>
+
+      </div>
+      
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <!-- <div class="portfolio-details-slider swiper"> -->
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <!-- <img src="assets/img/portfolio/portfolio-details-3.jpg" alt=""> -->
+
+
+                <h1>Implementation of Decision Trees</h1>
+
+                <br>
+
+                
+                <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/Decision_trees.ipynb">Link to clustering code implementation</a>
+
+                <br><br>
+
+                    <h2>Methods</h2>
+                   <h3>Basic Structure</h3>
+                    <ul>
+                    <li>A decision tree is a flowchart-like structure in which:
+                    <li>Internal nodes represent tests on attributes.</li>
+                    <li>Branches represent the outcome of these tests.</li>
+                    <li>Leaf nodes represent class labels or decision outcomes.</li>
+                    </ul>
+
+
+                      <h3>Functionality</h3>
+                      <ul>
+                      <li>The goal is to classify data points by splitting the dataset based on attribute values.</li>
+                      <li>Splits are chosen to maximize the homogeneity of each resulting subset.</li>
+                      <li>It can be employed for both classification (predicting discrete labels) and regression (predicting continuous values).</li>
+                      </ul>
+
+
+                      <h3>Criteria for Splitting</h3>
+                      <ul>
+                      <li>Commonly uses measures like "information gain" based on the concept of entropy from information theory.</li>
+                      <li>The attribute that results in the highest information gain (or other criteria) is chosen for the split.</li>
+                      </ul>
+
+
+
+                      <h3>Building Process</h3>
+                      <ul>
+                      <li>Starts at the root and splits data on the best attribute.</li>
+                      <li>Recursively applies the process to each subset.</li>
+                      <li>Continues until all data in a node have the same class or further splitting is not beneficial.</li>  
+                      <li>To avoid overfitting, trees are often "pruned" by removing sections that provide little predictive power.
+                      </li>
+                      </ul>
+
+                        
+                      <h3>Advantages</h3>
+                      <li>Easy to interpret and visualize.</li>
+                      <li>Accessible to users with non-technical backgrounds.</li>
+
+                      <h3>Limitations</h3>
+                      <ul>
+                      <li>Can overfit noisy or complex data.</li>
+                      <li>Often used in ensemble methods like Random Forests to improve accuracy and robustness.</li>
+                      
+                      </ul>
+
+                      <h2>Code Workflow/Implementation()</h2>
+
+
+                      <li>Loads a dataset from a CSV file into a DataFrame.
+                      This dataset appears to be related to ADHD measures, possibly 
+                      preprocessed with PCA (Principal Component Analysis).</li>
+                    
+                      <li>Separates the dataset into features (`X`) and the target variable (`y`). 
+                      The target variable here is 'DX'.The `drop` method is used to exclude the target column from the feature set.</li>
+                      
+                      
+                      <li><b>Split the Data</b></li>
+                        <ul>
+                      <li><b>Library: </b>Scikit-learn (`train_test_split` from `sklearn.model_selection`)</li>
+                      <li><b>Purpose: </b>Splits the dataset into a training set (80% of the data) and a testing set 
+                          (20% of the data). This is done to evaluate the model's performance on unseen data.</li>
+                        </ul>
+
+
+                      <li><b>Create and Train the Decision Tree Model</b></li>
+                      <ul>
+                          <li><b>Library: </b>Scikit-learn (`DecisionTreeClassifier` from `sklearn.tree`)</li>
+                      <li><b>Purpose: </b>Initializes a Decision Tree Classifier model and trains it on the training data (`X_train` and `y_train`).</li>
+                      </ul>
+                      
+                      <li><b>Make Predictions and Evaluate the Model</b></li>
+                      <ul>
+                          
+                          <li><b>Library: </b>Scikit-learn (`accuracy_score` from `sklearn.metrics`)</li>
+                      <li><b>Purpose: </b>The model makes predictions on the test data (`X_test`). The accuracy of these predictions is then evaluated against the actual values (`y_test`) using the `accuracy_score` function.</li>
+                          
+                          
+                      </ul>
+                          
+                      <li><b>Visualize the Decision Tree</b></li>
+                          
+                      <ul>
+                          
+                          
+                      <li><b>Libraries: </b>
+                        <ul>
+                        <li>Matplotlib (`plt` from `matplotlib.pyplot`) for plotting.</li>
+                         <li>Scikit-learn (`plot_tree` from `sklearn.tree`) for tree visualization.</li>
+                      </ul>
+                        <li><b>Purpose: </b>Generates a visual representation of the trained decision tree. This is helpful for understanding how the model makes decisions.</li>
+                          
+                      </ul>
+
+                      <p>Sample Code</p>
+                      <ul>  
+                        <code>
+                          X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) <br>
+                          
+                         
+                          model = DecisionTreeClassifier()<br>
+                          model.fit(X_train, y_train)<br>
+                          
+                          
+                          predictions = model.predict(X_test)<br>
+                          accuracy = accuracy_score(y_test, predictions)<br>
+                          print(f"Model Accuracy: {accuracy}")<br>
+                          </code>
+
+                      </ul>
+
+                      <h2>Results</h2>
+                    <ul>
+                    
+                    <li>Model Accuracy: 0.8032786885245902</li>
+                    <li>Precision: 0.6190058479532163</li>
+                    <li>Recall: 0.6672364672364672</li>
+
+  
+
+                    </ul>
+                    <img width="800" 
+                    height="500" src="assets/img/decision_trees_1.png" alt="Italian Trulli">
+
+
+                    <p>Confusion matrix of Decision tree</p>
+
+                    <img width="800" 
+                    height="500" src="assets/img/confusion_matrix_DT.png" alt="Italian Trulli">
+                
+                    <!-- Random Forest Algorithm -->
+                    <h1>Implementation of Random Forest Algorithm</h1>
+
+                        <h2>Methods</h2>
+
+                        <h3>Ensemble Learning Technique</h3>
+                        <ul>
+                        <li>Random Forest is an ensemble method that combines multiple decision trees to produce a more accurate and stable prediction for classification and regression tasks.</li>
+                        <li>Feature Selection Capability: Random Forests can indicate which features are important in the classification or regression task.</li>
+
+                            
+                        </ul>
+
+
+                        <h3>Construction of Multiple Decision Trees</h3>
+                        <ul>
+                            
+                        <li>Each tree is built from a sample drawn with replacement (bootstrap sample) from the training set.</li>
+                        <li>In each tree, a subset of features is randomly selected to split the nodes, adding diversity and reducing correlation among trees.</li>
+                        </ul>
+
+                        <h3>Aggregation of Predictions</h3>
+
+                        <ul>
+                        <li>In classification, the output is the mode of the classes predicted by individual trees.</li>
+                        <li>In regression, it's the mean of the predictions from all trees.</li>
+                        </ul>
+                        
+                        <h3>Advantages</h3>
+
+                        <ul>
+
+                        <li>Handles large datasets with higher dimensionality effectively.</li>
+                        <li>Reduces overfitting by averaging multiple decision trees.</li>
+                        <li>Provides estimates of feature importance, helpful in large feature sets.</li>
+                        <li>Widely used due to its ease of use, robustness, and minimal need for parameter tuning.</li>
+                            
+                        </ul>
+
+                        <h3>Drawbacks</h3>
+
+                        <ul>
+                            
+                        <li>Can be computationally intensive, especially with a large number of trees.</li>
+                        <li>Does not provide direct coefficients or relationships between features and the target variable.</li>
+
+                        </ul>
+                        <h2>Results</h2>
+                          <ul>
+                          <li>Obtained Accuracy: 0.8524590163934426</li>
+                          </ul>
+
+                          <!-- XGBoost Algorithm -->
+                          <h2>Implementation of XGBoost Algorithm</h1>
+
+                            <h3>Principle of Gradient Boosting</h3>
+                            
+                            <ul>
+                                
+                            <li>XGBoost is based on gradient boosting, where predictive models are added sequentially to correct the predecessors' errors.</li>
+                            <li>Utilizes a gradient descent algorithm to minimize loss, typically a differentiable loss function.</li>
+                            <li>XGBoost's effectiveness is due to its amalgamation of gradient boosting with regularization, efficient data handling, system optimization, and its adaptability to different machine learning problems.</li>
+                            </ul>
+                            
+                            
+                            <h3>Tree-Based Learning and Regularization</h3>
+                            <ul>
+                                
+                            <li>Employs decision trees as base learners.</li>
+                            <li>Focuses on minimizing a loss function that includes regularization to prevent overfitting.</li>
+                            <li>Regularization considers both tree complexity and leaf weights.</li>
+                                
+                            </ul>
+                            
+                            
+                            <h3>Efficient Handling of Sparse Data</h3>
+                            <ul>
+                                
+                            <li>Capable of efficiently processing sparse data (data with many zeros or missing values).</li>
+                            <li>Uses sparsity-aware algorithms for missing data and weighted quantile sketch for optimal splits.</li>
+                                
+                            </ul>
+                             
+                            
+                            
+                            <h3>System Optimization</h3>
+                            <ul>
+                                
+                            <li>Features parallelization in tree construction for faster computation.</li>
+                            <li>Includes cache-aware access to data structures and supports approximate tree learning (histogram-based).</li>
+                            </ul>
+                            
+                            
+                            <h3>Scalability and Flexibility</h3>
+                            
+                            <ul>
+                            <li>Scalable across different computing environments, including single machines and distributed systems like Hadoop and Spark.</li>
+                            <li>Offers flexibility in objective functions and evaluation criteria, suitable for various machine learning tasks.</li>   
+                                
+                            </ul>
+                            <h2>Results</h2>
+                              <ul>
+                              <li>Obtained Accuracy: 0.8524590163934426</li>
+                              </ul>
+                              <h2>Conclusion</h2>
+
+                              Detecting ADHD (Attention Deficit Hyperactivity Disorder) using fMRI (functional Magnetic Resonance Imaging) 
+                              scans is a promising area of research that leverages advanced neuroimaging techniques to better understand and 
+                              diagnose ADHD. 
+                </div>
+
+                
+
+              </div>
+              <div class="swiper-pagination"></div>
+            <!-- </div> -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Definition</h3>
+              <p>A decision tree is a powerful tool of supervised learning algorithms.
+                It builds a flowchart-like tree structure where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label. It is
+                 constructed by recursively splitting the training data into subsets based on the values of the attributes until a stopping criterion is met, 
+                 such as the maximum depth of 
+                the tree or the minimum number of samples required to split a node.</p>
+              
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+      <a href="index.html">
+        <button style = "position:relative; right: 300px;left:800px; top:2px; background-color:rgb(0, 221, 255);">Go Back</button>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

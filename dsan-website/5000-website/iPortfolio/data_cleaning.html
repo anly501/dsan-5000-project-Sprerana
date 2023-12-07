@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- <title>Portfolio Details - iPortfolio Bootstrap Template</title> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mandalika Sai Prerana</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>ADHD Detection and Diagnosis</span></a></li>
+         
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <b><h2>Data Cleaning</h2></b>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Portfoio Details</li> -->
+          </ol>
+        </div>
+
+      </div>
+      
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <!-- <div class="portfolio-details-slider swiper"> -->
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <!-- <img src="assets/img/portfolio/portfolio-details-3.jpg" alt=""> --> 
+                  <div>              
+                  
+                </div>   
+                  <br>
+                <p>Data cleaning, also known as data cleansing, is a crucial step in the data preparation process. 
+                  It involves identifying and correcting (or removing) errors and inconsistencies in data to improve its 
+                  quality and accuracy.</p>
+
+
+                <h2>Data cleaning steps taken</h2>
+
+                <br>
+                
+                <h3>Removing spaces</h3>
+                <ul>
+                <li>Removing spaces from column names simplifies the process of writing code, as it avoids the need for additional syntax (like quotes or brackets) 
+                  to handle the spaces.</li>
+                  <li><code>df1.columns = df1.columns.str.strip()</code></li>
+                </ul>
+                
+                
+                
+                <h3>Data Transformation</h3>
+                
+                <ul>
+                    <li>Converting data from one format or structure into another. This can be part of cleaning if the current format of the data impedes analysis.</li>
+                    <li>Its important to make sure all the column are the correct datatype and the the values with incorrect datatypes are replaced with NaN</li>
+                    <li>The below image has all correct datatypes after transforming to correct ones. If any values are in a column with incorrect datatype are converted to nan after transformation.</li>
+                </ul>
+
+                <img width="600" 
+                height="600" src="assets/img/correct_datatypes.png" alt="Italian Trulli">
+
+                <h3>Check for duplicate rows</h3>
+                <ul>
+                    
+                <li>Duplicate records consume unnecessary storage and processing resources. Removing them can make data storage more efficient and speed up data processing tasks.In machine learning and statistical modeling, duplicate data points can lead to biased or overfitted models because the model might overemphasize the repeated information.</li>
+                </ul>
+                
+               
+
+                <h3>Handling Missing Data</h3>
+
+                <li>This includes dealing with gaps in data where information is missing. Strategies for handling 
+                missing data might include imputation (filling in missing values based on other data), or simply removing 
+                records with missing values. Replaced the missing values in NaN.</li>
+
+                <img width="500" 
+                height="500" src="assets/img/num_missing_values.png" alt="Italian Trulli">
+
+                <li>Removing the columns having missing values — If you have a column with more than 80% missing values, then it is better to drop the column.</li>
+
+                <li>If the dataset is large and the number of missing values in a column is relatively small, you might consider removing the rows</li>
+
+                <li>Replacing missing values with Mean,Median or Mode when there are many missing values and loss of data would like to avoided.</li>
+                  <ul>
+                <li>The mode is most suitable for categorical data (like gender, color, type of product). It represents the most frequent category within a column.</li>
+
+                <li>Mean is suitable if the variable should ideally follow a normal distribution or be close to it and there are no many outliers.Mean is very sensitive to outliers. If the data is heavily skewed or has significant outliers, the mean might not be the best representation of central tendency, and the median
+                could be a more appropriate choice.</li>
+
+                <li>Mean is suitable if the variable should ideally follow a normal distribution or be close to it and there are no many outliers.Mean is very sensitive to outliers. If the data is heavily skewed or has significant outliers, the mean might not be the best representation of central tendency, and the median
+                  could be a more appropriate choice.</li>
+                <li>The missing values in Verbal IQ is replaced with mean as it follows a normal distribution as below</li>
+                  <img width="500" 
+                  height="500" src="assets/img/verbal_iq_normal.png" alt="Italian Trulli">
+                </ul>
+                
+              
+                <h3>Remove columns</h3>
+                <ul>
+                <li>Removing the ScanDir ID column: ID columns are generally arbitrary and do not contain 
+                    information relevant to the target variable or outcome.</li>
+                <li>Full-2 IQ is removed as it has a lot of missing values.</li>
+                <li>The columns removed are Secondary Dx, Full2 IQ, ScanDir ID, ADHD Measure as there are many missing values</li>
+                  
+                </ul>
+
+                <h3>Handling Outliers</h3>
+                  <ul>
+                      <li>The number of outliers in each column </li>
+                     <img width="300" 
+                  height="300" src="assets/img/num_outliers.png" alt="Italian Trulli">
+                  <li>We saw that the outliers present in the dataset has all erroneous values which are not necessary for our model building.
+                    Therefore, removed the rows with the outliers.</li>
+                    <img width="500" 
+                    height="500" src="assets/img/erroneous_values.png" alt="Italian Trulli">
+                  </ul>
+                
+                  <h2>Normalisation</h2>
+
+                  <ul>
+                  <li>This process standardizes the values in a dataset to ensure they're on a consistent scale. This is particularly important when comparing data from different sources.</li>
+                  </ul>
+
+               <h3>Results</h3>
+                  <li>The data after cleaning</li>
+               <img width="1100" 
+               height="300" src="assets/img/data_after_cleaning.png" alt="Italian Trulli">    
+                  <br>          
+               <div>
+               <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/01-data_cleaning/data_cleaning_code.ipynb">Link to Data Cleaning code of record data in Python</a>
+               <br>
+               <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/01-data_cleaning/data_cleaning_code.qmd">Link to Data Cleaning code of records data in R</a>
+               <br>
+               <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/data/00-raw-data/Brown_TestRelease_phenotypic.csv">Record Data before cleaning</a>
+               <br>
+               <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/data/01-modified-data/combined_data_clean01.csv">Record Data after cleaning</a>
+               <br>
+               <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/data/01-modified-data/adhd_clean.csv">Data cleaning code of text data</a>
+              </div> 
+               <br>
+
+               <h3>Conclusion</h3> 
+                <p>Data cleaning is a significant step in data analysis and machine learning projects, as the quality of the insights drawn 
+                  from data is heavily dependent on the quality of the data itself. It's a time-consuming process but essential for accurate, 
+                  reliable outcomes in data-driven projects.</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            <!-- </div> -->
+          </div>
+
+
+        </div>
+
+      </div>
+      <a href="index.html">
+        <button style = "position:relative; right: 300px;left:600px; top:30px; background-color:rgb(0, 238, 255);">Go Back</button>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer"> 
+    <div class="container">
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

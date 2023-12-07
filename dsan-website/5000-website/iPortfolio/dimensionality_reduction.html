@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mandalika Sai Prerana</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>ADHD Detection and diagnosis</span></a></li>
+         
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Dimensionality Reduction</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Portfoio Details</li> -->
+          </ol>
+        </div>
+
+      </div>
+      
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <!-- <div class="portfolio-details-slider swiper"> -->
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <!-- <img src="assets/img/portfolio/portfolio-details-3.jpg" alt=""> -->
+
+                  <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/PCA_tsne_code.ipynb">Link to PCA and TSNE code implementation</a>
+                 <br>
+                  <h2>Project Proposal</h2>
+
+
+                    <h2>Project Outline</h2>
+
+                    <ul>
+                    <li>The goal of the project is to To enhance the accuracy and speed of ADHD diagnosis compared to traditional
+                    methods, reducing the dependency on subjective assessments.</li>
+                    <li>Using the participant's personal characteristic data (site of data collection, age, gender, 
+                    handedness, performance IQ, verbal IQ, and full scale IQ) as the input feature to diagnose (classify) 
+                    that individual into one of three categories: healthy control, ADHD combined (ADHD-C) type, or ADHD 
+                    inattentive (ADHD-I) type.</li>
+                    <li>Using the existing public datasets related to ADHD, such as the ADHD-200 dataset, for model training
+                    and validation</li>
+                    <li>The data contains both healthy controls and ADHD patients</li>
+                    </ul>
+
+                    <ul>
+                      <li>We need to find whether the person has ADHD or not</li>
+                      <li>The dataset in hand is Phenotypic data which has personal characteristic of people</li>
+                      <li>The categorical variables are gender,Site,Handedness, ADHD Measure,DX</li>
+                      <li>The numerical variables are Age,ADHD Index,Verbal IQ,Performance IQ,Full4 IQ</li>
+
+                    </ul>
+
+                    <h2>Objective</h2>
+
+                    <ul>
+
+
+                    <li>ADHD datasets can include a wide range of variables,pertaining to the Phenotypic characteristics. PCA helps in reducing the number of variables while retaining the most 
+                    important information. This simplification makes the data easier to visualize, analyze, and interpret. </li>
+                    <li>PCA can reveal patterns in the data that might not be immediately apparent. It helps in understanding the underlying structure of the data by identifying the principal components 
+                    that explain the most variance.</li>
+                    <li>T- SNE on the other hand captures non linear relationship between variables and therefore is more powerful than PCA</li>
+                    <li>If the primary goal is to visualize high-dimensional data in 2D or 3D for exploratory analysis, t-SNE is often more effective. It can create more meaningful and distinct clusters of 
+                    data points.</li>
+                    </ul>
+
+                    <h2>Tools and Libraries</h2>
+
+                    <ul>
+
+                    <li>Using Python as the primary programming language for its extensive support and libraries in data analysis 
+                    and machine learning.</li>
+                    <li>scikit-learn:For implementing various machine learning algorithms, particularly for classification tasks.</li>
+
+                    <li>TensorFlow/Keras : To explore deep learning models, especially when working with large neuroimaging 
+                        datasets.</li>
+                    <li>Pandas & NumPy : For data manipulation and numerical computations.</li>
+                    <li>Matplotlib & Seaborn:** For data visualization to analyze features and results.</li>
+                    </ul>
+
+                    <h3>Dimensionality Reduction Tools: from sci-kit library of python</h3>
+                    <li>Principal Component Analysis (PCA): To reduce the dimensionality of neuroimaging data while retaining most of 
+                                        the variance.</li>
+                                
+                    <li>t-Distributed Stochastic Neighbor Embedding (t-SNE):For non-linear dimensionality reduction, 
+                        especially useful in high-dimensional data visualization.</li>
+                    </ul>
+                  
+                    <h1>Project Report</h1>
+
+                      <h2>Implementation of PCA</h2>
+
+
+                      <ul>
+                      <li>PCA is a linear dimensionality reduction technique that projects data along the directions of maximum variance. It effectively captures the global structure of the data.</li>
+                          
+                      <li>It reduces dimensions while trying to preserve as much variance (information) as possible. However, it might miss complex, non-linear relationships within the data.</li>
+                        
+
+                      <li>The first component explains the most variance, with each subsequent component explaining less.</li> 
+
+
+                        
+                      <li>A high cumulative variance (e.g., 70-90%) by the first few components indicates that they retain most of the information in the original data.</li>
+                      <li>Principal Component Loadings:Loadings indicate the correlation between the original variables and the principal components. They help in understanding the contribution of each original variable to each principal component.</li>
+                      <li>High absolute values of loadings suggest that the corresponding original variable has a strong influence on that principal component.</li>
+
+                      </ul>
+                      <h2>code work-flow/implementation</h2>
+    
+                      <ul>
+                      
+                      <li>Data is imported into data in a format that PCA can work with, typically a pandas dataframe</li>
+                          
+                      <li>PCA is affected by the scale of the features, so the data is standardized before applying PCA using the StandardScaler()</li>
+                      <li> apply PCA from the sci-kit library as follows</li>
+                      </ul> 
+
+                      <b>PCA sample code</b>
+                      <code>pca = PCA(n_components=2)<br>
+                        pca.fit(data_scaled)<br>
+                        data_pca = pca.transform(data_scaled)</code>
+
+                        <ul>
+                          <li>After applying PCA, we can examine the results from the scree plot</li>
+                          <li>A scree plot shows the variance explained by each principal component.
+                          It helps in determining the number of components to retain, often done by identifying the 'elbow' in the plot, where the variance explained by additional components becomes marginal.</li>
+                          
+                          ![Scree plot](../images/pca_scree_plot)
+                          <img width="600" 
+                    height="400" src="assets/img/scree_plot_pca.png" alt="Italian Trulli">
+                  
+                          </ul>
+
+
+
+                          <h3>Limitations and Considerations:</h3>
+
+                          <ul>
+                          <li>PCA assumes linear relationships and may not work well with non-linear data.</li>
+                              
+                          <li>It is sensitive to the scaling of variables; hence normalization or standardization is often required before applying PCA.</li>
+                              
+                          <li>PCA can be influenced by outliers, so outlier detection and treatment may be necessary.</li>
+                              
+                          </ul>
+
+
+
+                          <h3>Applications:</h3>
+
+                          <p>PCA is used in various fields like finance (risk management, portfolio construction), biology (genomic data analysis), marketing (customer segmentation), and many others for pattern identification, feature extraction, and data simplification.</p>
+
+                          <h3>Resutls</h3>
+                          <ul>
+                            <li>From the plot below the 4th principal component i.e PC4 & PC3 are capturing the least variance of data i.e only about 15% of it so we can avoid using that principal component</li>
+                              <li>We are considering only PC1 and PC2 as they contribute most to the variation in the data</li>
+                              
+                          </ul>
+
+                          <img width="800" 
+                    height="500" src="assets/img/pca_2d.png" alt="Italian Trulli">
+
+                   
+
+                          
+
+                          <!-- TSNEEEE -->
+                          <h2>Implementation of T-SNE</h2>
+                                  <ul><li>t-SNE is a non-linear technique that excels in uncovering local structures and patterns in the data. It's particularly effective at separating clusters and revealing intricate structures.</li>
+                                      
+                                  </ul>
+                                      
+                                  <h3>code work-flow/Implementation</h3>
+                                  <ul>
+                                  <li>The code selects specific features (columns) from the dataset X, which in this case are 'DX', 'Verbal IQ', and 'ADHD Index'. These features are presumably important for the analysis and are stored in a new DataFrame features.</li>
+                                  <li>t-SNE Implementation: It initializes a t-SNE model with certain parameters (n_components=2, random_state=42, perplexity=30, learning_rate=200, n_iter=500).</li>
+                                  This configuration is important as it determines the quality and interpretability of the output.
+                                  <li>The t-SNE model is then applied to the features DataFrame to reduce the dimensionality of the data to two components. This makes it possible to visualize the data in a 2D scatter plot.</li>
+                                  <li>The results of the t-SNE, which are the two-dimensional representations of each data point, are added to the original DataFrame df as new columns (tsne-2d-one and tsne-2d-two).</li>
+                                      
+                                  <li>A scatter plot is created using the Seaborn library, with tsne-2d-one and tsne-2d-two as the x and y axes, respectively.</li>
+                                  <li>The points in the scatter plot are colored based on a categorical variable from the dataset, labeled as "Site". The color palette is dynamically generated based on the number of unique values in the 'Site' column.
+                                      The plot is given a title, and labels for both axes.</li>
+                                  <li>Visualization: Finally, the plot is displayed. This visual representation allows for the observation of patterns, clusters, and relationships within the high-dimensional data, now represented in two dimensions.</li>
+                                  </ul>
+                                      
+                                  <h3>Limitations</h3>
+                                  <ul>
+                                  <li>While t-SNE is excellent at visualizing clusters and relationships between close neighbors, it can distort the true distances between widely separated data points, potentially misrepresenting the global structure.</li>
+                                      
+                                  </ul>
+                                      
+                                  <h3>Results</h3>
+                                  <ul>
+                                  <li> t-SNE reduces the number of variables in a dataset while attempting to preserve the significant structures and relationships between data points. In our case it reduced it to 2 features.</li>
+                                  <li>we can interpret from our resutls that Data points that are similar tend to group together, forming distinct clusters. The presence of these clusters can indicate inherent groupings in the data, such as different types or categories.</li>
+                                  <li>Points that do not belong to any specific cluster or that lie far from all clusters could be considered outliers</li>
+                                  </ul>
+
+                                  <img width="800" 
+                                  height="500" src="assets/img/pca_tsne_comparison.png" alt="Italian Trulli">
+
+                                  <h3>Compare PCA and Tsne</h3>
+
+                                <p>Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) are two popular techniques for dimensionality reduction and data visualization, each with its unique strengths and limitations. Let's evaluate them in terms of preserving data structure and information, and compare their visualization capabilities.</p>
+
+                                <h3>Preserving Data Structure and Information</h3>
+
+                                <h3>PCA:</h3>
+                                <ul>
+                                <li>Preservation of Global Structure:** PCA is a linear technique that reduces dimensionality by projecting data onto the directions of maximum variance. It preserves the global structure of the data, meaning relationships between widely separated data points are maintained.</li>
+                                <li>Information Loss:** PCA can lose information, particularly in cases where important data variance occurs along directions of lesser overall variance. It may not capture nonlinear relationships well.</li>
+                                <li>Interpretability:** PCA components are linear combinations of original features, which can sometimes be interpreted in terms of the original data.</li>
+                                </ul>
+
+                                <h3>t-SNE:</h3>
+                                <ul>
+                                <li>Preservation of Local Structure:** t-SNE is a nonlinear technique adept at preserving local structures and relationships within the data. It excels at revealing clusters or groups in the data.</li>
+                                </ul>
+                                <h3>Visualization Capabilities</h3>
+
+                                  <h3>PCA:</h3>
+                                  <ul>
+                                  <li>Simplicity:PCA provides a straightforward visualization, typically in 2D or 3D, with axes representing principal components</li>
+
+                                  <li>Scalability:PCA scales better to large datasets and higher dimensions.</li>
+                                  <li>Linear Separation:** Effective for datasets where class separation is linear.</li>
+                                  </ul>
+
+                                  <h3>t-SNE:</h3>
+
+                                  <ul>
+                                      
+                                  <li>Detailed Clustering: t-SNE often provides more insightful visualizations for complex datasets with inherent clusters.</li>
+                                  <li>Non-linear Patterns: Better at visualizing datasets with non-linear patterns.</li>
+                                  <li>Computational Intensity: More computationally intensive, especially for large datasets.</li>
+                                    
+                                      
+                                  </ul>
+                                  <h3>When one would outperform the other</h3>
+
+                                  <h3>PCA is Preferred When</h3>
+                                  <ul>
+                                  <li>You need a quick, general overview of the data.</li>
+                                  <li>The dataset is large, and computational resources are a concern.</li>
+                                    
+                                  <li>You require a linear dimensionality reduction or are dealing with largely linearly separable data.</li>
+                                  <li>Interpretability of components in terms of original features is important.</li>
+                                  </ul>
+                                  <h3>t-SNE is Preferred When:</h3>
+
+                                  <li>The primary goal is to visualize and understand complex datasets with non-linear relationships.</li>
+
+                                  <li>The dataset has inherent clusters you wish to identify.</li>
+
+                                  <li>The focus is on preserving local relationships over global structure.</li>
+
+                                  <li>Computational resources are not a major constraint, or the dataset is relatively small.</li>
+
+                
+                                  <img width="800" 
+                                  height="500" src="assets/img/compare_pca_tsne.png" alt="Italian Trulli">
+
+                  
+                </div>
+
+                
+
+              </div>
+              <div class="swiper-pagination"></div>
+            <!-- </div> -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Definition</h3>
+              <p>Dimensionality reduction is the process of reducing the number of features (or dimensions) in a 
+                dataset while retaining as much information as possible. This can be done for a variety of reasons, such as to reduce the 
+                complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data.</p>
+              
+            </div>
+           
+          </div>
+
+        </div>
+
+      </div>
+      <a href="index.html">
+        <button style = "position:relative; right: 300px;left:800px; top:2px; background-color:rgb(0, 255, 234);">Go Back</button>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+     
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

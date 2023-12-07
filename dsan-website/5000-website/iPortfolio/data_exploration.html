@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mandalika Sai Prerana</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>ADHD Detection and diagnosis</span></a></li>
+         
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Data Exploration</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Portfoio Details</li> -->
+          </ol>
+        </div>
+
+      </div>
+      
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <!-- <div class="portfolio-details-slider swiper"> -->
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <!-- <img src="assets/img/portfolio/portfolio-details-3.jpg" alt=""> -->
+                  <p>The dataset after data cleaning contains information such as site, gender, age, handedness, diagnosis (DX), ADHD index, inattentive and hyper/impulsive scores, IQ measures, and different IQ scores (verbal, performance, and full).</p>
+                  
+                  <h2>Tools and Software</h2>
+                      <ul>
+                        <li>Software tools used in Python are Pandas, MatplotLib and seaborn</li>
+                       <li>pandas : A powerful library for data manipulation and analysis. It offers data structures like DataFrames and Series, making it easier to clean, analyze, and visualize data.</li>
+                        <li>NumPy:Essential for scientific computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.</li>
+                        <li>Matplotlib:A widely used plotting library. It is great for creating static, interactive, and animated visualizations in Python.</li>
+                        <li>Seaborn:Built on top of Matplotlib, Seaborn is a statistical data visualization library that provides a high-level interface for drawing attractive and informative statistical graphics.</li>
+                        <li>Used describe() method to display the summary statistics of the dataset</li>
+                        <li>Used boxplots from the sns library to find number of outliers for certain columns( Age,ADHD Index,Verbal IQ,Performance IQ,Full4 IQ) </li>
+                        
+                    </ul>
+
+                  <h2>Data Understanding:</h2>
+                    <ul>
+                  <li>Site: Identifier for different data collection sites. Values range from 1 to 6.</li>
+                  <li>Gender: Coded as 0 or 1, likely representing male and female.</li>
+                    <li>Age: Continuous variable representing the age of individuals. Ranges from 7.17 to 15.79 years.</li>
+                       <li>Handedness: Coded as 1, which might indicate all participants are right-handed or the data is lacking handedness diversity.</li>
+                       <li>DX (Diagnosis): Diagnostic category, with values 0, 1, and 2. The meaning of each category needs to be understood from the study's context.</li>
+                       <li>ADHD Index: A score presumably indicating ADHD severity or likelihood. Ranges from 8.07 to 90.</li>
+                      <li>Inattentive: Score for inattentiveness, ranges from 9 to 90.</li>
+                       <li>Hyper/Impulsive: Score for hyperactivity/impulsiveness, ranges from around 8.64 to 90.</li>
+                      <li>IQ Measure: A categorical variable with values 0.1 to 3. The specific meaning of these values needs context.</li>
+                      <li>Verbal IQ: Score for verbal IQ, ranging from around 75.57 to 146.</li>
+                       <li>Performance IQ: Score for performance IQ, ranging from 71 to 146.</li>
+                        <li>Full4 IQ: Overall IQ score, ranging from 81 to 144.</li>
+                      </ul>
+                  <h2>Descriptive Statistics</h2>
+                  <ul>
+                    <li>These statistics provide a quick overview of the shape, central tendency, and spread of the data, which are essential for further analysis and interpretation. Key aspects of descriptive statistics 
+                      includes mean, median, mode, range, variance, standard deviation, Interquartile Range (IQR)</li>
+                    
+                      <img width="1100" 
+                  height="400" src="assets/img/descriptive_stats.png" alt="Italian Trulli">
+                    
+                  </ul>
+
+                  <p><strong>Given this information, here are some potential data science questions and hypothesis tests explored</strong></p>
+
+
+                 <li><b>Correlation between Inattentive and Hyper/Impulsive Scores:</b> Is there a significant correlation between inattentive scores and hyper/impulsive scores in individuals with ADHD?</li>
+
+                 
+                  <ul>
+                 <img width="600" 
+                 height="400" src="assets/img/impulsive_attentiveness_correlation.png" alt="Italian Trulli">
+
+                 <li>Inattentiveness and Impulsivity are two common attributes of ADHD. We can see a strong positive correlation between both the variables, suggesting that they 
+                  are associated. The ADHD patients with high inattentives, might have high impulsivity or one might lead to another.</li>
+                 
+                  <br>
+
+                  <li><b>Age and ADHD Severity:</b> Is there a correlation between age and the severity of ADHD symptoms as measured by the ADHD index?</li>
+                  <li>Scatter Plot to view the correlation between age and ADHD severity</li>
+                  <img width="600" 
+                 height="400" src="assets/img/age_adhd_correlation.png" alt="Italian Trulli">
+
+                 <li>Conducted a pearson correlation test to see if there is any correlation between age and ADHD severity. The below test results suggest that there 
+                  is a statistically very moderate positive correlation between age and the severity of ADHD 
+                  symptoms as measured by the ADHD index. It supports the above EDA.</li>
+
+                  <ul>
+                  <li><b>Pearson's correlation:</b> 0.3101172481015408, P-value: 3.540521026496185e-08</li>
+                  <li><b>Spearman's rank correlation:</b> 0.35938985179456373, P-value: 1.1433896709914024e-10</li>
+                  <li>this is a very small p-value, indicating that the correlation is statistically significant.</li>
+                  </ul>
+
+
+                 <br>
+                  
+                 <li><b>Verbal IQ Scores and ADHD Diagnosis:</b>Are there differences in Verbal IQ among different ADHD diagnosis categories (e.g., ADHD vs. non-ADHD)?</li>
+                 <ul>
+
+                  <li>Visualisation of Verbal IQ scores fro different ADHD categories </li>
+
+                  <img width="600" 
+                 height="400" src="assets/img/verbal_iq_barplot.png" alt="Italian Trulli">
+                 <li><b>Conducted an Anova test to see if there is statiscally significant difference in Verbal IQ scores among the three ADHD diagnosis categories</b></li>
+
+                 <ul>
+                  <li>F- value is 3.5392436378501952 and p-value is 0.03868518536792531</li>
+                  <li>The low p-value and large F-value indicates that there are statistically significant differences in Verbal IQ scores among the ADHD diagnosis categories included in the 
+                    analysis.</li>
+                    <li>The large value of F gives more evidence to reject the null hypothesis</li>
+
+                    <li>More broadly, Verbal IQ is linked to problem solving, abstract reasoning, and working memory.There are apparent differences in the average
+                      Verbal IQ scores among the ADHD diagnosis categories. This could indicate that Verbal IQ is variably affected by different types of ADHD.
+                      While the plot provides a visual representation, further statistical analysis would be required to determine the significance of these differences.</li>
+                </ul>
+
+                <br>
+                <li><b>Site Variability:</b> To check how the distribution of participants are in different sites.</li>
+
+                <img width="600" 
+                height="400" src="assets/img/dist_site.png" alt="Italian Trulli">
+
+              
+                <li><b>Impact of Handedness:</b> Is there a statistically significance difference in the ADHD scores of men and women</li>
+    
+                  <ul>
+                      <li> t-test comparing the ADHD severity scores between left-handed and right-handed</li>
+                  <ul>
+                  <li>H0: Handedness does not have an association with ADHD severity or IQ scores.</li>
+                  <li>H1: Handedness is associated with differences in ADHD severity or IQ scores.</li>
+                  <li>T-statistic: -1.140797487395754 and P-value: 0.2548610506601483</li>
+                    <li>P-value is greater than 0.05. There is no statistically significant difference in ADHD scores between left-handed and right-handed individuals.</li>
+                      </ul>
+
+                  </ul>
+
+                  <li><b>Creating a violin plot for the 'Full4 IQ' distribution across 'DX' (Diagnosis) categories</b></li>
+                  <ul>
+                    <img width="600" 
+                    height="400" src="assets/img/violin_plot.png" alt="Italian Trulli">
+                    <li>Distribution Shape: Each 'violin' shows the kernel density estimation of the Full4 IQ for each diagnosis category. Wider sections indicate a 
+                      higher density of data points at those IQ scores.</li>
+
+                      <li>Median and Quartiles: The thick bar in the middle of each violin represents the interquartile range, with the white dot denoting the median IQ score.</li>
+
+                      <li>Comparisons Between Diagnoses: By comparing the shapes and sizes of the violins, you can observe differences or similarities in the IQ distributions 
+                        across different diagnostic categories.</li>
+
+                      <li>Data Spread and Outliers: The thin lines extending from the violins indicate the overall range of IQ scores, including potential outliers or extreme 
+                        values.</li>
+                  </ul>
+
+                  <li><b>Check for outliers using the boxplot</b></li>
+                  <ul>
+                  <li>Box plot of performance IQ. we can see there are no outliers in performance IQ</li>
+                  <li>The outliers have been dealt in the data cleaning section. To avoid loss of data, replaced the outliers with mean, median and mode accordingly</li>
+
+                  <img width="600" 
+                    height="400" src="assets/img/performance_iq_boxplot.png" alt="Italian Trulli">
+                  </ul>
+              </ul>
+
+               <h2>Results</h2>
+
+                <ul>
+                  <li> <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/01-data_cleaning/data_eda.ipynb">Link to EDA code</a></li>
+                </ul>
+
+               <h2>Conclusion</h2>
+                  <p>The EDA provided valuable insights into the nature of the dataset and the underlying patterns within it. 
+                    While it highlighted several interesting relationships and trends, it also underscored the complexity of ADHD diagnosis and symptomatology. 
+                    The findings from this analysis will serve as a guide for more detailed and focused investigations,
+                     potentially contributing to better understanding and management of ADHD.</p>
+
+                </div>
+
+                
+
+              </div>
+              <div class="swiper-pagination"></div>
+            <!-- </div> -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Definition</h3>
+              <li>Exploratory Data Analysis (EDA) in data science is a critical initial step in analyzing the data from an experiment or a survey.</li> 
+<li>It's a process of performing initial investigations on data, typically to discover patterns, spot anomalies, test hypotheses, or check assumptions.</li>
+
+<li>Summarizing the Main Characteristics: This can be done through descriptive statistics, where you summarize central tendencies, dispersion, and shape of the dataset’s distribution.</li>
+
+<li>Visualizing Data: Graphical representations like histograms, box plots, scatter plots, and bar charts are used to get a better understanding of the data. These visualizations can reveal patterns, anomalies, trends, and relationships within the data</li>
+              
+            </div>
+           
+          </div>
+
+        </div>
+
+      </div>
+      <a href="index.html">
+        <button style = "position:relative; right: 300px;left:800px; top:2px; background-color:rgb(0, 255, 255);">Go Back</button>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      
+      
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
