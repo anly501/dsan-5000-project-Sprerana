@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mandalika Sai Prerana</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>ADHD Detection and diagnosis</span></a></li>
+         
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Feature Selection and Naive Bayes</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Portfoio Details</li> -->
+          </ol>
+        </div>
+
+      </div>
+      
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <!-- <div class="portfolio-details-slider swiper"> -->
+              <div class="swiper-wrapper align-items-center">
+
+               
+
+                <div class="swiper-slide">
+
+                  <h2>SelectKBest Method for Feature Selection</h2>
+
+                  <p>selects the top k features based on a specified statistical test, where k is a user-defined parameter. The algorithm ranks features based on 
+                    the chosen test and retains only the highest scoring features. The nature of the statistical test depends on the type of data (e.g., categorical 
+                  or continuous) and the specific problem being addressed.</p>
+
+                  <p>Considered k as 6 as it gave the highest accuracy score when trained on a Naive Bayes Classifier</p>
+
+                  <p>Sample code of SelectKBest</p>
+
+                  <code>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)<br>
+                  selector = SelectKBest(mutual_info_classif, k=6)<br>
+                  X_train_selected = selector.fit_transform(X_train, y_train)<br>
+                  X_test_selected = selector.transform(X_test)<br></code>
+                    <br>
+                    
+                  <p><b>The selected features are ['Site', 'ADHD Index', 'Inattentive', 'Hyper/Impulsive', 'IQ Measure', 'Full4 IQ']</b></p>
+
+                  <p>The below permutation importance graph shows valuable insights into how each feature contributes to the model's predictive power.</p>
+
+                  <img width="600" 
+                     height="400" src="assets/img/permutation_importance.png" alt="Italian Trulli">
+                  
+
+                  <h3>Uses of SelectkBest</h3>
+
+                  <ul>
+
+                    <li>Dimensionality Reduction: Helps in reducing the number of input variables to those that are believed to be most useful to the model to predict the target variable.</li>
+                     <li>Improving Model Performance: By eliminating irrelevant or redundant features, it can improve the model's accuracy and efficiency.</li>
+                     <li>Reducing Overfitting: Fewer features can lead to a simpler model, which reduces the risk of overfitting.</li>
+                    <li>Enhancing Model Interpretability: Models with fewer features are generally easier to interpret and understand.</li>
+                     <li>Speeding Up Training: Less computational resources are required, resulting in faster model training.</li>
+                  </ul>
+
+                  <p><b>Considering these selected features, we will train a Naive Bayes classifier</b></p>
+
+                  <h2>Overview of Naive Bayes classification </h2>
+                  
+                  <p>Naive Bayes classification is a simple and widely used machine learning algorithm for solving classification problems.
+                     It is based on Bayes' theorem and is considered "naive" because it makes a strong independence assumption that features used to predict
+                      the class label are conditionally independent given the class. While this independence assumption may not always hold in real-world data, 
+                      Naive Bayes can still perform surprisingly well in practice, especially for text classification and spam detection.</p>
+
+                  <p>Bayes Theorem: Naive Bayes is based on Bayes theorem, which is a fundamental probability theory. 
+                  Bayestheorem relates the probability of an event occurring, given certain evidence, to the probability of 
+                  that evidence occurring, given the event. In the context of classification, its used to find the probability of 
+                  a particular class given the observed features</p>
+
+                  <p>The main types of Naive Bayes classifiers include</p>
+                  <ul>
+                    <li><b>Multinomial Naive Bayes:</b></li>
+                        <ul>
+                          <li>Multinomial Naive Bayes is suitable for discrete data, especially text data, where the features represent
+                          the frequency of words or other categorical attributes.</li>
+                        <li>It models the likelihood of observing specific feature values as multinomially distributed.</li>
+                        <li>It is widely used in natural language processing tasks, such as text classification, spam detection, and 
+                          topic modeling.</li>
+                        <li>Examples of applications: Text classification, email filtering, and content categorization based on word 
+                          counts or frequencies.</li>
+                      </ul>
+                    <li><b>Gaussian Naive Bayes:</b></li>
+
+                          <ul>
+                            <li>Gaussian Naive Bayes is used when the features are continuous and follow a Gaussian (normal) distribution.</li>
+                            <li>It assumes that the likelihood of the features for each class is Gaussian, with the class-specific mean 
+                            and variance.</li>
+                            <li>It is commonly applied in scenarios where the data represents continuous or real-valued attributes.</li>
+                            <li>Examples of applications: Document classification with numerical features (e.g., word counts), sentiment analysis, 
+                                and medical diagnosis with continuous biomarkers.</li>
+                        </ul>
+
+
+                    <li><b>Bernoulli Naive Bayes:</b></li>
+
+                          <ul>
+                            <li>Bernoulli Naive Bayes is specifically designed for binary or binary-like data, where
+                            features are either present (1) or absent (0).</li>
+                          <li>It models the likelihood of features as a sequence of Bernoulli trials.</li>
+                          <li>It is often used for problems where you want to classify data based
+                            on the presence or absence of certain attributes.</li>
+                          <li>Examples of applications: Document or image classification based on binary features 
+                            (e.g., presence or absence of specific keywords or visual elements), sentiment analysis with 
+                            binary sentiment labels.</li>
+                        </ul>
+
+
+
+                  </ul>
+
+                  <h3>Probabilistic nature of Naive Bayes and its Bayes theorem foundation.</h3>
+                    <p> Naive bayes follows bayes theorem concept</p>
+                    <p> Bayes theorem formula</p>
+                    <p>P(A|B) = [P(B|A) * P(A)] / P(B)</p>
+                    <ul>
+                      <li>P(A|B) is the probability of event A occurring given that event B has occurred</li>
+                      <li>P(B|A) is the probability of event B occurring given that event A has occurred.</li>
+                      <li>P(A) is the prior probability of event A.</li>
+                      <li>P(B) is the prior probability of event B.</li>
+                    </ul>
+
+                    <h2>Naive Bayes on Record Data</h2>
+                    <p> Gaussian Naive Bayes classifier (GaussianNB) is instantiated and trained on the transformed training data (X_train_selected).</p>
+                    <li>Here is the sample code of Naive Bayes</li>
+                    <code>clf = GaussianNB()
+                      <br>
+                      clf.fit(X_train_selected, y_train)<br>
+                      predictions = clf.predict(X_test_selected)<br>
+                      accuracy = accuracy_score(y_test, predictions)<br>
+                      print(f'Accuracy: {accuracy}')</code>
+                      
+                     <h3>Results</h3>
+                        <ul>
+                          <li><b>Accuracy: </b>0.8131868131868132</li>
+                          <li><b>Precision: </b>0.8464052287581699</li>
+                          <li><b>Recall/Sensitivity: </b>0.6276515151515151</li>
+                            <li><b>Micro F1 Score: </b>0.8131868131868132</li>
+                            <li><b>Macro F1 Score: </b>0.6897220426632192</li>
+                            <li><b>Weighted F1 Score: </b>0.8007273915483353</li>
+                            <li><b>Confusion Matrix: </b></li>
+                            <p>[[60  4  0]<br>
+                             [10 12  0]<br>
+                             [ 2  1  2]]</p>
+                        </ul>
+
+                        <p>Confusion matrix</p>
+                     <img width="600" 
+                     height="400" src="assets/img/confusion_matrix.png" alt="Italian Trulli">
+
+                     <p>ROC- curve</p>
+                     <img width="600" 
+                     height="400" src="assets/img/roc_NB.png" alt="Italian Trulli">
+
+                     <p>Precision Recall</p>
+                     <img width="600" 
+                     height="400" src="assets/img/precision_recall_NB.png" alt="Italian Trulli">
+
+
+                     <h2>Naive Bayes Classifier with text data</h2>
+                     <p>Used text data to and trained MultinomialNB model from the sklearn pytho library to perform binary classification. The two labels are whether the participant has 
+                      ADHD or not</p>
+
+                     <h3>Results</h3>
+                     <ul>
+                      <li>Accuracy: 0.45</li>
+                      <li>Precision: 0.37</li>
+                      <li>Recall: 0.45</li>
+                      <li>f1-score: 0.40</li>
+                      <li>Support: 20</li>
+                      
+                      <img width="600" 
+                     height="400" src="assets/img/confusion_matrix_NB_text.png" alt="Italian Trulli">
+
+                     <img width="600" 
+                     height="400" src="assets/img/predicted_class_dist.png" alt="Italian Trulli">
+                      
+                        </ul>
+                      <h3>Code Links</h3>
+                      <ul>
+                        <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/data/01-modified-data/adhd_clean.csv">Link to text code</a></li><br>
+                        <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/naive%20bayes.ipynb">Link to feature selection and Naive Bayes for record data code</a></li><br>
+                        <a href="https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/codes/Naive_bayes_text.ipynb">Link to Naive Bayes for text data code</a></li><br>
+                        <a href=" https://github.com/anly501/dsan-5000-project-Sprerana/blob/main/data/01-modified-data/combined_data_clean02.csv">Link to data after feature selection</a></li><br>
+                       
+                      </ul>
+
+                      <h3>Conclusion</h3>
+
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            <!-- </div> -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Definition</h3>
+             
+
+              <p>Feature selection is a crucial process in machine learning and data science that involves selecting a subset of relevant features 
+                (variables, predictors) for use in model construction. The goal is to improve the model's performance by eliminating irrelevant, redundant, 
+                or noisy data.</p>
+
+            </div>
+           
+          </div>
+
+        </div>
+
+      </div>
+      <a href="index.html">
+        <button style = "position:relative; right: 300px;left:800px; top:2px; background-color:rgb(0, 255, 255);">Go Back</button>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      
+      
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
