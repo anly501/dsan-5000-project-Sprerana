@@ -1,7 +1,0 @@
----
-title: "DSAN-5000: Introduction"
----
-
-
-Name : Mandalika Sai Prerana
-NetId : sm3906
